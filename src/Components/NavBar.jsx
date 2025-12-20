@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
+import logo from "../assets/logo.png";
 
 const NavBar = () => {
   const links = (
@@ -44,13 +45,22 @@ const NavBar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+
+        <Link to="/" className="btn btn-ghost flex items-center text-xl ">
+          <img src={logo} alt="Hero.IO Logo" className="w-8 h-8" />
+          Hero.IO
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">
+        <a
+          href="https://github.com/TanvirReza1"
+          target="_blank"
+          className="btn"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
           Contributor
         </a>
