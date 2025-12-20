@@ -2,12 +2,13 @@ import React from "react";
 import NavBar from "../Components/NavBar";
 import { Outlet } from "react-router";
 import Footer from "../Components/Footer";
+import Header from "../Pages/Header";
 
 const MainLayout = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <header>
-        <NavBar></NavBar>
+        <Header></Header>
       </header>
 
       <main className="flex-1">
