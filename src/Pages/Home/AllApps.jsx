@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
+import Loading from "../../Components/Loading";
 
 const AllApps = () => {
   const [apps, setApps] = useState([]);
   const [search, setSearch] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [loadingText, setLoadingText] = useState("Loading applications...");
+
   const navigate = useNavigate();
 
   useEffect(() => {
+    
+
     fetch("/Apps.json")
       .then((res) => res.json())
-      .then((data) => setApps(data));
+      .then((data) => {
+        setApps(data);
+        setLoading(false);
+      });
   }, []);
 
   // 🔍 Live search (case-insensitive)
@@ -18,7 +27,8 @@ const AllApps = () => {
   );
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
+    <section className="max-w-7xl mx-auto px-4 py-12 relative">
+      {loading && <Loading text={loadingText} />}
       {/* Title Section */}
       <div className="mb-8 text-center">
         <h2 className="text-3xl font-bold mb-2">Our All Applications</h2>
@@ -37,7 +47,12 @@ const AllApps = () => {
           type="text"
           placeholder="Search apps by title..."
           value={search}
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) => {
+            setLoading(true);
+            setLoadingText("Searching apps...");
+            setSearch(e.target.value);
+            setTimeout(() => setLoading(false), 300);
+          }}
           className="w-full md:w-64 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
