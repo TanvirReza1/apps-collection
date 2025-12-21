@@ -71,32 +71,54 @@ const AppDetails = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
       {/* 🔹 App Info Section */}
-      <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="flex flex-col md:flex-row gap-8 items-center border-b pb-8">
+        {/* App Icon */}
         <img
           src={app.image}
           alt={app.title}
-          className="w-full rounded-xl shadow-lg"
+          className="w-40 h-40 rounded-2xl object-cover"
         />
 
-        <div>
-          <h2 className="text-3xl font-bold mb-3">{app.title}</h2>
-
-          <p className="text-gray-600 mb-2">⭐ Rating: {app.ratingAvg}</p>
-          <p className="text-gray-600 mb-2">
-            ⬇ Downloads: {app.downloads.toLocaleString()}
+        {/* App Details */}
+        <div className="flex-1">
+          <h2 className="text-3xl font-bold mb-1">{app.title}</h2>
+          <p className="text-sm text-blue-600 mb-4">
+            Developed by productive.io
           </p>
-          <p className="text-gray-600 mb-4">💬 Reviews: {app.reviews}</p>
 
+          {/* Stats */}
+          <div className="flex gap-10 mb-6">
+            <div className="text-center">
+              <p className="text-gray-500 text-sm">Downloads</p>
+              <p className="text-xl font-semibold">
+                {app.downloads.toLocaleString()}
+              </p>
+            </div>
+
+            <div className="text-center">
+              <p className="text-gray-500 text-sm">Average Ratings</p>
+              <p className="text-xl font-semibold">{app.ratingAvg}</p>
+            </div>
+
+            <div className="text-center">
+              <p className="text-gray-500 text-sm">Total Reviews</p>
+              <p className="text-xl font-semibold">
+                {(app.reviews / 1000).toFixed(0)}K
+              </p>
+            </div>
+          </div>
+
+          {/* Install Button */}
           <button
             disabled={installed}
             onClick={handleInstall}
-            className={`px-6 py-2 rounded-lg text-white transition ${
+            className={`px-6 py-2 rounded-lg text-white font-medium transition ${
               installed
                 ? "bg-gray-400 cursor-not-allowed"
-                : "bg-blue-600 hover:bg-blue-700"
+                : "bg-green-500 hover:bg-green-600"
             }`}
           >
-            {installed ? "Installed" : "Install"}
+            {installed ? "Installed" : `Install Now (${app.size} MB)`}
           </button>
         </div>
       </div>
