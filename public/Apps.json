@@ -1,0 +1,363 @@
+[
+  {
+    "image": "https://i.ibb.co/app1.png",
+    "title": "TaskMaster Pro",
+    "companyName": "SoftNova Ltd",
+    "id": 1,
+    "description": "A productivity app to manage daily tasks efficiently.",
+    "size": 45,
+    "reviews": 1240,
+    "ratingAvg": 4.5,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 440 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app2.png",
+    "title": "FitLife Tracker",
+    "companyName": "HealthTech",
+    "id": 2,
+    "description": "Track workouts, calories, and health progress.",
+    "size": 60,
+    "reviews": 980,
+    "ratingAvg": 4.3,
+    "downloads": 98000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app3.png",
+    "title": "EduLearn",
+    "companyName": "BrightFuture",
+    "id": 3,
+    "description": "Online learning platform for students.",
+    "size": 75,
+    "reviews": 2100,
+    "ratingAvg": 4.7,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 980 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app4.png",
+    "title": "Foodiez",
+    "companyName": "TasteHub",
+    "id": 4,
+    "description": "Discover and order food from nearby restaurants.",
+    "size": 55,
+    "reviews": 1600,
+    "ratingAvg": 4.2,
+    "downloads": 180000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 450 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app5.png",
+    "title": "TravelGo",
+    "companyName": "WanderTech",
+    "id": 5,
+    "description": "Plan trips and book hotels easily.",
+    "size": 90,
+    "reviews": 1350,
+    "ratingAvg": 4.4,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 420 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app6.png",
+    "title": "NoteSnap",
+    "companyName": "WriteSmart",
+    "id": 6,
+    "description": "Take quick notes and sync across devices.",
+    "size": 30,
+    "reviews": 700,
+    "ratingAvg": 4.1,
+    "downloads": 85000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app7.png",
+    "title": "MoneyWise",
+    "companyName": "FinCore",
+    "id": 7,
+    "description": "Personal finance and expense tracking app.",
+    "size": 65,
+    "reviews": 1900,
+    "ratingAvg": 4.6,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 280 },
+      { "name": "4 star", "count": 650 },
+      { "name": "5 star", "count": 850 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app8.png",
+    "title": "WeatherNow",
+    "companyName": "SkyLabs",
+    "id": 8,
+    "description": "Real-time weather updates and forecasts.",
+    "size": 25,
+    "reviews": 500,
+    "ratingAvg": 4.0,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 120 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app9.png",
+    "title": "ChatFlow",
+    "companyName": "ConnectX",
+    "id": 9,
+    "description": "Secure messaging and group chat app.",
+    "size": 70,
+    "reviews": 2600,
+    "ratingAvg": 4.8,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app10.png",
+    "title": "PhotoEdit Plus",
+    "companyName": "PixelWorks",
+    "id": 10,
+    "description": "Advanced photo editing tools for everyone.",
+    "size": 110,
+    "reviews": 1750,
+    "ratingAvg": 4.3,
+    "downloads": 220000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 320 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 640 }
+    ]
+  },
+
+  {
+    "image": "https://i.ibb.co/app11.png",
+    "title": "QuickScan",
+    "companyName": "DocuTech",
+    "id": 11,
+    "description": "Scan documents and convert to PDF.",
+    "size": 40,
+    "reviews": 880,
+    "ratingAvg": 4.2,
+    "downloads": 95000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 270 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app12.png",
+    "title": "StudyBuddy",
+    "companyName": "EduCore",
+    "id": 12,
+    "description": "Study planner for students.",
+    "size": 48,
+    "reviews": 1020,
+    "ratingAvg": 4.4,
+    "downloads": 140000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 310 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app13.png",
+    "title": "ShopSmart",
+    "companyName": "EcomSoft",
+    "id": 13,
+    "description": "Smart shopping assistant and price tracker.",
+    "size": 68,
+    "reviews": 1450,
+    "ratingAvg": 4.1,
+    "downloads": 160000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 410 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app14.png",
+    "title": "DailyQuotes",
+    "companyName": "MindBoost",
+    "id": 14,
+    "description": "Inspirational quotes every day.",
+    "size": 20,
+    "reviews": 620,
+    "ratingAvg": 4.6,
+    "downloads": 90000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 285 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app15.png",
+    "title": "RideEasy",
+    "companyName": "MoveFast",
+    "id": 15,
+    "description": "Book rides quickly and safely.",
+    "size": 85,
+    "reviews": 2300,
+    "ratingAvg": 4.5,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 340 },
+      { "name": "4 star", "count": 780 },
+      { "name": "5 star", "count": 1020 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app16.png",
+    "title": "MusicWave",
+    "companyName": "SoundLab",
+    "id": 16,
+    "description": "Stream and download music.",
+    "size": 95,
+    "reviews": 3100,
+    "ratingAvg": 4.7,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1710 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app17.png",
+    "title": "SafeGuard",
+    "companyName": "SecureNet",
+    "id": 17,
+    "description": "Mobile security and antivirus app.",
+    "size": 70,
+    "reviews": 890,
+    "ratingAvg": 4.3,
+    "downloads": 130000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 170 },
+      { "name": "4 star", "count": 310 },
+      { "name": "5 star", "count": 310 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app18.png",
+    "title": "RecipeBook",
+    "companyName": "Cookify",
+    "id": 18,
+    "description": "Thousands of recipes from around the world.",
+    "size": 78,
+    "reviews": 1550,
+    "ratingAvg": 4.6,
+    "downloads": 210000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 680 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app19.png",
+    "title": "LanguagePro",
+    "companyName": "LinguaSoft",
+    "id": 19,
+    "description": "Learn new languages easily.",
+    "size": 82,
+    "reviews": 2700,
+    "ratingAvg": 4.8,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 280 },
+      { "name": "4 star", "count": 750 },
+      { "name": "5 star", "count": 1590 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/app20.png",
+    "title": "CloudDrive",
+    "companyName": "DataBox",
+    "id": 20,
+    "description": "Secure cloud storage and file sharing.",
+    "size": 120,
+    "reviews": 3400,
+    "ratingAvg": 4.6,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1890 }
+    ]
+  }
+]

@@ -1,14 +1,17 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
-import { Outlet } from "react-router";
+import { Outlet, useNavigation } from "react-router";
 import Footer from "../Components/Footer";
-import Header from "../Pages/Header";
 
 const MainLayout = () => {
+  const navigation = useNavigation();
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
+      {/* 🔹 Premium Page Navigation Loader */}
+      {navigation.state === "loading" && <Loading text="Navigating..." />}
+
       <header>
-        <Header></Header>
+        <NavBar></NavBar>
       </header>
 
       <main className="flex-1">

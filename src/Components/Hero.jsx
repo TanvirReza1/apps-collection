@@ -2,6 +2,7 @@ import React from "react";
 import { FaApple } from "react-icons/fa";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import hero from "../assets/hero.png";
+import TopApp from "../Pages/Home/TopApp";
 
 const Hero = () => {
   return (
@@ -74,6 +75,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
+      <TopApp></TopApp>
     </div>
   );
 };
