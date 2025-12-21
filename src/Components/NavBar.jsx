@@ -1,20 +1,57 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaAppStore, FaGithub, FaHome } from "react-icons/fa";
 import { Link, NavLink } from "react-router";
 import logo from "../assets/logo.png";
 import Banner from "./Banner";
+import { MdInstallDesktop } from "react-icons/md";
 
 const NavBar = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `flex items-center gap-2 px-2 py-1 relative
+     after:content-[''] after:absolute after:left-0 after:-bottom-1
+     after:h-[2px] after:bg-primary after:transition-all after:duration-300
+     ${isActive ? "after:w-full" : "after:w-0 hover:after:w-full"}
+    `
+          }
+        >
+          <FaHome />
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/apps">Apps</NavLink>
+        <NavLink
+          to="/apps"
+          className={({ isActive }) =>
+            `flex items-center gap-2 px-2 py-1 relative
+     after:content-[''] after:absolute after:left-0 after:-bottom-1
+     after:h-[2px] after:bg-primary after:transition-all after:duration-300
+     ${isActive ? "after:w-full" : "after:w-0 hover:after:w-full"}
+    `
+          }
+        >
+          <FaAppStore />
+          Apps
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/installation">Installation</NavLink>
+        <NavLink
+          to="/installation"
+          className={({ isActive }) =>
+            `flex items-center gap-2 px-2 py-1 relative
+     after:content-[''] after:absolute after:left-0 after:-bottom-1
+     after:h-[2px] after:bg-primary after:transition-all after:duration-300
+     ${isActive ? "after:w-full" : "after:w-0 hover:after:w-full"}
+    `
+          }
+        >
+          <MdInstallDesktop />
+          Installation
+        </NavLink>
       </li>
     </>
   );
@@ -59,7 +96,7 @@ const NavBar = () => {
         <a
           href="https://github.com/TanvirReza1"
           target="_blank"
-          className="btn"
+          className="btn  bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"
           rel="noopener noreferrer"
         >
           <FaGithub />

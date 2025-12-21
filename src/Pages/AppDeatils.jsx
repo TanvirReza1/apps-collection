@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import Loading from "../Components/Loading";
@@ -16,6 +16,26 @@ const AppDetails = () => {
   const [loading, setLoading] = useState(true);
   const app = useLoaderData();
   const [installed, setInstalled] = useState(false);
+
+  // 🔴 APP NOT FOUND (invalid route / refresh / wrong id)
+  if (!app) {
+    return (
+      <section className="max-w-4xl mx-auto px-4 py-20 text-center">
+        <h2 className="text-4xl font-bold text-red-500 mb-4">App Not Found</h2>
+
+        <p className="text-gray-600 mb-6">
+          The app you are looking for does not exist or may have been removed.
+        </p>
+
+        <Link
+          to="/"
+          className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+        >
+          Go Back Home
+        </Link>
+      </section>
+    );
+  }
 
   // 🔹 Check localStorage on load
   useEffect(() => {
@@ -83,15 +103,40 @@ const AppDetails = () => {
 
       {/* 🔹 Review Chart */}
       <div className="mt-14">
-        <h3 className="text-2xl font-semibold mb-6">User Reviews</h3>
+        <h3 className="text-2xl font-semibold mb-6">Ratings</h3>
 
-        <div className="w-full h-72  ">
-          <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={app.ratings}>
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Bar dataKey="count" />
+        <div className="w-full h-72">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={app.ratings}
+              layout="vertical"
+              margin={{ top: 10, right: 30, left: 40, bottom: 10 }}
+            >
+              {/* X Axis → Counts */}
+              <XAxis
+                type="number"
+                axisLine={false}
+                tickLine={false}
+                tick={{ fill: "#6b7280" }}
+              />
+
+              {/* Y Axis → Stars */}
+              <YAxis
+                dataKey="name"
+                type="category"
+                axisLine={false}
+                tickLine={false}
+                tick={{ fill: "#6b7280" }}
+              />
+
+              <Tooltip cursor={{ fill: "#f3f4f6" }} />
+
+              <Bar
+                dataKey="count"
+                fill="#fb923c" // orange like Figma
+                radius={[0, 6, 6, 0]}
+                barSize={22}
+              />
             </BarChart>
           </ResponsiveContainer>
         </div>
