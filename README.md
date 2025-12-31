@@ -8,6 +8,14 @@ The project is built with a clean UI, responsive layout, and smooth user experie
 
 ---
 
+## 🌐 Live Project
+🔗 Live Site:https://bucolic-sopapillas-5cf914.netlify.app/
+
+
+## 🖼️ Screenshot
+![Apps Collection Screenshot](./appColl.png)
+
+
 ## 🚀 Key Features
 - Browse and view app details
 - Install & uninstall apps (saved in localStorage)
@@ -39,6 +47,22 @@ The project is built with a clean UI, responsive layout, and smooth user experie
 
 ---
 
+## 🚀 How to Run the Project Locally
+
+### Step 1: Clone the Repository
+git clone https://github.com/TanvirReza1/apps-collection.git
+
+### Step 2: Go to Project Directory
+cd apps-collection
+
+### Step 3: Install Dependencies
+npm install
+
+### Step 4: Run the Project
+npm run dev
+
+
+
 ## 📦 NPM Packages
 ```bash
 react
@@ -51,3 +75,6 @@ react-hot-toast
 react-icons
 vite
 eslint
+
+
+
